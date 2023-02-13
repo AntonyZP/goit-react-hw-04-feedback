@@ -12,8 +12,6 @@ export const App = () => {
     const [bad, setBad] = useState(0);
     const options = ['good', 'neutral', 'bad'];
     const countTotalFeedback = good + bad + neutral;
-    console.log (countTotalFeedback);
-
     const onLeaveFeedback = option =>{
     if (option === 'good') {
         setGood(prevGood => prevGood + 1)
@@ -28,8 +26,6 @@ export const App = () => {
     };
 
 const countPositiveFeedbackPercentage = Math.round((good * 100) / countTotalFeedback) || 0;
-console.log (countPositiveFeedbackPercentage);
-console.log (countTotalFeedback);
 
     return (
      <Wrapper>
