@@ -20,10 +20,7 @@ export const App = () => {
     } else if (option === 'bad') {
         setBad(prevBad => prevBad + 1)
     } 
-    else {
-        return;
-    }
-    };
+};
 
 const countPositiveFeedbackPercentage = Math.round((good * 100) / countTotalFeedback) || 0;
 
